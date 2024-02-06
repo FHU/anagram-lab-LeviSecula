@@ -1,8 +1,11 @@
 #REMOVE PASS AND FIX THIS FUNCTION
-def anagram():
-    pass
+def anagram(a,b):
+    newA = ''.join(sorted(a))
+    newB = ''.join(sorted(b))
+    return newA == newB
 
 if __name__ == '__main__':
-    #REMOVE PASS YOUR CODE GOES HERE
-    pass
+    a = input()
+    b = input()
+    print(anagram(a,b))
     
